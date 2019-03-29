@@ -4,6 +4,7 @@
 
 .page-header .navbar.navbar-dark {
     padding-bottom: 0px;
+    width:100%;
 }
 
 li.switch-app .app-menu .app-menu-btn span {
@@ -12,7 +13,7 @@ li.switch-app .app-menu .app-menu-btn span {
 }
 
 .page-header .container {
-    padding: 0px 50px 0px 50px;
+    /*padding: 0px 50px 0px 50px;*/
 }
 
 .page-header .nav-bar .nav {
@@ -59,7 +60,7 @@ div.page-header ul.nav li.level-1-first, div.page-header ul.nav li.level-1-last 
 }
 
 .icn.logo.eligibility {
-    background: url(../../assets/images/LH_LogixProjection_Logo.png);
+    background: url(../../assets/images/EligibilityLogo.png);
     background-position-y: center !important;
     background-position-x: left !important;
     background-repeat: no-repeat;
@@ -143,11 +144,11 @@ div.page-header ul.nav li.level-1-first, div.page-header ul.nav li.level-1-last 
 }
 
 .padding-function {
-    padding-left: 1.25em !important;
+    padding-left: 10px !important;
 }
 
 .margin-function {
-    margin-left: 1.25em !important;
+    margin-left: 10px !important;
 }
 
 .size-function {
