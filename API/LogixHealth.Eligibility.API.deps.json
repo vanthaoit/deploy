@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1/win-x86",
-    "signature": "8c6319f925e0fdbf4589ce5846a1013a4e47639b"
+    "signature": "b1b154b057a6261b0057b6164990ccbc5135cc14"
   },
   "compilationOptions": {
     "defines": [
@@ -30,7 +30,8 @@
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "LogixHealth.Eligibility.Database": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0",
-          "LogixHealth.Eligibility.Utilities": "1.0.0",
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
+          "LogixHealth.EnterpriseLogger.Extensions.Core": "2019.1.0.1",
           "Microsoft.AspNetCore.App": "2.1.8",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6",
           "Microsoft.NETCore.App": "2.1.8",
@@ -70,7 +71,7 @@
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "compile": {
@@ -338,7 +339,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.1.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.1.2",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -580,7 +581,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.0.4",
           "Microsoft.AspNetCore.Routing": "2.1.1",
           "Microsoft.AspNetCore.WebSockets": "2.1.7",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Http.Connections.dll": {}
@@ -589,7 +590,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -674,7 +675,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -883,7 +884,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -1095,7 +1096,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.3",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1119,7 +1120,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.0.4",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -1433,7 +1434,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -1482,7 +1483,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -1653,7 +1654,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -1740,7 +1741,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.2.0"
         },
@@ -1764,7 +1765,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -1993,7 +1994,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {}
@@ -2003,7 +2004,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {}
@@ -2039,7 +2040,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "NuGet.Frameworks": "4.7.0"
         },
         "compile": {
@@ -2068,7 +2069,7 @@
           "Microsoft.NETCore.Platforms": "2.1.2"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.1": {
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
@@ -2076,10 +2077,15 @@
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NLog/4.5.11": {
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -2471,7 +2477,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -2622,6 +2628,7 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+      "System.Net.Http.WinHttpHandler/4.4.0": {},
       "System.Net.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -2674,6 +2681,14 @@
           "System.Xml.XmlSerializer": "4.3.0"
         }
       },
+      "System.Private.ServiceModel/4.4.4": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Net.Http.WinHttpHandler": "4.4.0",
+          "System.Reflection.DispatchProxy": "4.4.0",
+          "System.Security.Principal.Windows": "4.5.1"
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -2683,6 +2698,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.DispatchProxy/4.4.0": {},
       "System.Reflection.Emit/4.3.0": {
         "dependencies": {
           "System.IO": "4.3.0",
@@ -2976,6 +2992,51 @@
           "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
         }
       },
+      "System.ServiceModel.Duplex/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Duplex.dll": {}
+        }
+      },
+      "System.ServiceModel.Http/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Http.dll": {}
+        }
+      },
+      "System.ServiceModel.NetTcp/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
+        }
+      },
+      "System.ServiceModel.Primitives/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Primitives.dll": {},
+          "ref/netstandard2.0/System.ServiceModel.dll": {}
+        }
+      },
+      "System.ServiceModel.Security/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Security.dll": {}
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -3172,24 +3233,40 @@
           "LogixHealth.Eligibility.Database.dll": {}
         }
       },
-      "LogixHealth.Eligibility.Infrastructure/1.0.0": {
-        "compile": {
-          "LogixHealth.Eligibility.Infrastructure.dll": {}
-        }
-      },
       "LogixHealth.Eligibility.Models/1.0.0": {
         "dependencies": {
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
-          "LogixHealth.Eligibility.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6"
         },
         "compile": {
           "LogixHealth.Eligibility.Models.dll": {}
         }
       },
-      "LogixHealth.Eligibility.Utilities/1.0.0": {
+      "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core/2019.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "System.ServiceModel.Duplex": "4.4.4",
+          "System.ServiceModel.Http": "4.4.4",
+          "System.ServiceModel.NetTcp": "4.4.4",
+          "System.ServiceModel.Security": "4.4.4"
+        },
         "compile": {
-          "LogixHealth.Eligibility.Utilities.dll": {}
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.dll": {}
+        }
+      },
+      "LogixHealth.EnterpriseLogger.Extensions.Core/2019.1.0.1": {
+        "dependencies": {
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
+          "Microsoft.AspNetCore": "2.1.6",
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.3",
+          "NLog": "4.5.11",
+          "System.ServiceModel.Duplex": "4.4.4",
+          "System.ServiceModel.Http": "4.4.4",
+          "System.ServiceModel.NetTcp": "4.4.4",
+          "System.ServiceModel.Security": "4.4.4"
+        },
+        "compile": {
+          "LogixHealth.EnterpriseLogger.Extensions.Core.dll": {}
         }
       }
     },
@@ -3202,7 +3279,8 @@
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "LogixHealth.Eligibility.Database": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0",
-          "LogixHealth.Eligibility.Utilities": "1.0.0",
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
+          "LogixHealth.EnterpriseLogger.Extensions.Core": "2019.1.0.1",
           "Microsoft.AspNetCore.App": "2.1.8",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6",
           "Microsoft.NETCore.App": "2.1.8",
@@ -3248,7 +3326,7 @@
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "runtime": {
@@ -3549,7 +3627,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.1.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.1.2",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {
@@ -3863,7 +3941,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.0.4",
           "Microsoft.AspNetCore.Routing": "2.1.1",
           "Microsoft.AspNetCore.WebSockets": "2.1.7",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Http.Connections.dll": {
@@ -3875,7 +3953,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "runtime": {
@@ -3987,7 +4065,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
@@ -4250,7 +4328,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {
@@ -4522,7 +4600,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.3",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Buffers": "4.5.0"
         },
         "runtime": {
@@ -4552,7 +4630,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.0.4",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
@@ -4950,7 +5028,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {
@@ -5017,7 +5095,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -5245,7 +5323,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {
@@ -5359,7 +5437,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.2.0"
         },
@@ -5389,7 +5467,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -5489,7 +5567,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -5502,7 +5580,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -5550,7 +5628,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.1",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -5582,23 +5660,31 @@
           "Microsoft.NETCore.Platforms": "2.1.2"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.2.21924"
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
           }
         }
       },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.1.20722"
+          }
+        }
+      },
+      "NLog/4.5.11": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.5.11.8645"
           }
         }
       },
@@ -6827,7 +6913,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {
@@ -6987,6 +7073,14 @@
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
         }
       },
+      "System.Net.Http.WinHttpHandler/4.4.0": {
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
       "System.Net.Primitives/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -7042,6 +7136,14 @@
           "System.Xml.XmlSerializer": "4.3.0"
         }
       },
+      "System.Private.ServiceModel/4.4.4": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Net.Http.WinHttpHandler": "4.4.0",
+          "System.Reflection.DispatchProxy": "4.4.0",
+          "System.Security.Principal.Windows": "4.5.1"
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -7051,6 +7153,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.DispatchProxy/4.4.0": {},
       "System.Reflection.Emit/4.3.0": {
         "dependencies": {
           "System.IO": "4.3.0",
@@ -7349,6 +7452,69 @@
           "Microsoft.NETCore.Platforms": "2.1.2"
         }
       },
+      "System.ServiceModel.Duplex/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Duplex.dll": {
+            "assemblyVersion": "4.1.0.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        }
+      },
+      "System.ServiceModel.Http/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Http.dll": {
+            "assemblyVersion": "4.1.2.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        }
+      },
+      "System.ServiceModel.NetTcp/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.NetTcp.dll": {
+            "assemblyVersion": "4.1.2.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Primitives.dll": {
+            "assemblyVersion": "4.2.0.3",
+            "fileVersion": "4.6.26720.1"
+          },
+          "lib/netstandard2.0/System.ServiceModel.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "0.0.65535.65535"
+          }
+        }
+      },
+      "System.ServiceModel.Security/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Security.dll": {
+            "assemblyVersion": "4.0.3.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -7557,24 +7723,40 @@
           "LogixHealth.Eligibility.Database.dll": {}
         }
       },
-      "LogixHealth.Eligibility.Infrastructure/1.0.0": {
-        "runtime": {
-          "LogixHealth.Eligibility.Infrastructure.dll": {}
-        }
-      },
       "LogixHealth.Eligibility.Models/1.0.0": {
         "dependencies": {
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
-          "LogixHealth.Eligibility.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6"
         },
         "runtime": {
           "LogixHealth.Eligibility.Models.dll": {}
         }
       },
-      "LogixHealth.Eligibility.Utilities/1.0.0": {
+      "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core/2019.1.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "System.ServiceModel.Duplex": "4.4.4",
+          "System.ServiceModel.Http": "4.4.4",
+          "System.ServiceModel.NetTcp": "4.4.4",
+          "System.ServiceModel.Security": "4.4.4"
+        },
         "runtime": {
-          "LogixHealth.Eligibility.Utilities.dll": {}
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.dll": {}
+        }
+      },
+      "LogixHealth.EnterpriseLogger.Extensions.Core/2019.1.0.1": {
+        "dependencies": {
+          "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
+          "Microsoft.AspNetCore": "2.1.6",
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.3",
+          "NLog": "4.5.11",
+          "System.ServiceModel.Duplex": "4.4.4",
+          "System.ServiceModel.Http": "4.4.4",
+          "System.ServiceModel.NetTcp": "4.4.4",
+          "System.ServiceModel.Security": "4.4.4"
+        },
+        "runtime": {
+          "LogixHealth.EnterpriseLogger.Extensions.Core.dll": {}
         }
       }
     }
@@ -8824,12 +9006,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
+    "Newtonsoft.Json/12.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
@@ -8837,6 +9019,13 @@
       "sha512": "sha512-W5Ke5xei9yS0ljQZuT75VgSp5M43eCPm5hHAelvKyGGU4dV7hYCmtwdsxoADb/exO6pYHeu/Iki43TdYPzfESQ==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "NLog/4.5.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Yni/XrDfbEhaCSXJsDkmW/n5AunhOxZ7OKKb+0U1I1/d8ZaKt3Jjzf20g/xPiKljmYuZKYqI5iI34g138kK8UQ==",
+      "path": "nlog/4.5.11",
+      "hashPath": "nlog.4.5.11.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
@@ -9321,6 +9510,13 @@
       "path": "system.net.http/4.3.0",
       "hashPath": "system.net.http.4.3.0.nupkg.sha512"
     },
+    "System.Net.Http.WinHttpHandler/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZmsFZIZ4PL2UfUlfj4KCzzAGGE2SF39ENIqtvfgu0bwMEAe3J3CqZr765E2W6eQQtNK08/8DpHcsA0sAKZdEtA==",
+      "path": "system.net.http.winhttphandler/4.4.0",
+      "hashPath": "system.net.http.winhttphandler.4.4.0.nupkg.sha512"
+    },
     "System.Net.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -9356,12 +9552,26 @@
       "path": "system.private.datacontractserialization/4.3.0",
       "hashPath": "system.private.datacontractserialization.4.3.0.nupkg.sha512"
     },
+    "System.Private.ServiceModel/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tsDkr5hwYwxV2LaB3H5BvCltCX57wv7JzwU5q8IV9vrFdzq/e/nPJAj4U5Ny/FzR4sMTVRprVSwl4mZqfFkt4Q==",
+      "path": "system.private.servicemodel/4.4.4",
+      "hashPath": "system.private.servicemodel.4.4.4.nupkg.sha512"
+    },
     "System.Reflection/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.DispatchProxy/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
+      "path": "system.reflection.dispatchproxy/4.4.0",
+      "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
     },
     "System.Reflection.Emit/4.3.0": {
       "type": "package",
@@ -9580,6 +9790,41 @@
       "path": "system.security.principal.windows/4.5.1",
       "hashPath": "system.security.principal.windows.4.5.1.nupkg.sha512"
     },
+    "System.ServiceModel.Duplex/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y/XLnKJ+xnuEUjrgJkXeLKCH4A+EwkX2TdOcTdgsEtxWmWq1+RbCjMd0zIlyNrbGD+nM9BxNg9rLVWVAPq81RA==",
+      "path": "system.servicemodel.duplex/4.4.4",
+      "hashPath": "system.servicemodel.duplex.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Http/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f7OWPKqfTaCzjpc6n+/xqNwv7YAHKMiBCPIgwxIXVnf0Vu9+yzfX6tXV9pSSCEFuqJ5tXGLz9MRRExrQEqVUkA==",
+      "path": "system.servicemodel.http/4.4.4",
+      "hashPath": "system.servicemodel.http.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.NetTcp/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TZUwkBUHK+HgPVpypcnCEzenn+Hly3mQ+QDqDtHKyqVBP2Yt+DAMp3NwuW35mTSMRqna5p9hd0U0vVq5azovOQ==",
+      "path": "system.servicemodel.nettcp/4.4.4",
+      "hashPath": "system.servicemodel.nettcp.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Primitives/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jv882Qt+tSJ2KnLGGMSGPwBvOxfXRncXW0YV/beBKRQ2c6bDbXVXwqaS2U9h+/cK1uL7C4zc66lnC7qvSBqPHw==",
+      "path": "system.servicemodel.primitives/4.4.4",
+      "hashPath": "system.servicemodel.primitives.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Security/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8mJj3lUNbBkntouQ3Eg3IF04GxiDrDK2X79+kcfq8V+W7NoYBREgWczaD60ZmW4KKRKnL0q3OnUNJlkzJJfe5w==",
+      "path": "system.servicemodel.security/4.4.4",
+      "hashPath": "system.servicemodel.security.4.4.4.nupkg.sha512"
+    },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -9721,17 +9966,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LogixHealth.Eligibility.Infrastructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "LogixHealth.Eligibility.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "LogixHealth.Eligibility.Utilities/1.0.0": {
+    "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core/2019.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogixHealth.EnterpriseLogger.Extensions.Core/2019.1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

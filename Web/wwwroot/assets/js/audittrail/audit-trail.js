@@ -28,38 +28,7 @@
     }
 }(function ($) {
 
-
-    var table_ = $('#auditTable').DataTable(
-        {
-            "aaSorting": [
-                [0, "asc"]
-            ],
-            "paging": false,
-            "ordering": false,
-            "info": false
-            
-        });
-    $('#auditTable tbody').on('click', 'button#moreDetails', function () {
-        var data = table_.row($(this).parents('tr')).data();
-        $('.tableMoreDetails').html('<table class="table dtr-details" width="100%"><tbody><tr><td class"text-nowrap">Validation Code<td><td>' + data[1] + '</td></tr><tr><td>Code Description<td><td>' + data[2] + '</td></tr><tr><td>Show Self Pay<td><td>' + data[3] + '</td></tr><tr><td>Show Insurance<td><td>' + data[4] + '</td></tr><tr><td>Date Created<td><td>' + data[5] + '</td></tr></tbody></table>');
-        $('#detailsTable').modal('show');
-    });
-    //var oTable = $('#validationTable').DataTable();
-    //$('#searchValidationTable').keyup(function () {
-    //    oTable.search($(this).val()).draw();
-    //})
-    $('.toggle-filter').on('change', function (e) {
-        e.preventDefault();
-        // Get Column API Object
-        var column = table_.column($(this).attr('data-column'));
-        // Toggle Visibility
-        column.visible(!column.visible());
-    });
-
-
-    
     OpenAuditTrails = function (id, desc) {
-        
         var currentId = id;
         var descriptionAuditTrail = desc;
         $.ajax({
@@ -70,9 +39,9 @@
             success: function (data) {
                 var response = data;
                 $('#PreviewAuditTrails').html(data);
-                $('#auditTable').DataTable();
+
                 $("#viewTrail").modal("show");
-                
+                $('#auditTable').DataTable();
             },
             failure: function (response) {
                 alert(response.responseText);
@@ -83,39 +52,12 @@
         });
     };
 
-    AuditTrail_GlobalFilter = function () {
-        $('#auditTable').DataTable();
-        $('#auditTable').DataTable().search(
-            $('#auditTrailFilters').val()
-
-        ).draw();
-    };
-
-    $('input.auditTrailFilters').on('keyup click', function () {
-        var abc = "";
-    });
-
-    $(".toggle-filter").change(function () {
-        alert("Handler for .change() called.");
-    });
-    checkColumFilter = function (e) {
-        e.preventDefault();
-        table_;
-        // Get Column API Object
-        var column = table_.column(e.currentTarget.attributes['data-column'].nodeValue);
-        // Toggle Visibility
-        column.visible(!column.visible());
-
-    
-    };
     ExportAuditTrailList = function () {
-
         $("#auditTable").table2excel({
             //exclude: ".excludeThisClass",
             name: "Audit Trail List",
             filename: "Audit Trail List", //do not include extension,
             fileext: ".xls"
         });
-
     };
 }));

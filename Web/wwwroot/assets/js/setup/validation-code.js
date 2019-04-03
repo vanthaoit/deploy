@@ -51,6 +51,13 @@
 
     submitValidationCode = function (event) {
         var validationCodeValue = $("#addValidationCode .validation-code-value").val();
+        if (!isValidValidationCode(validationCodeValue)) {
+            $("#submitValidationCodeForm span.validation-notification")
+                .text("The validation code structure is invalid. Please select a different code.")
+                .show()
+                .fadeOut(5000);
+            return false;
+        }
         var justcontinue = false;
         $.ajax({
             type: "Get",
@@ -61,7 +68,7 @@
                 var response = data;
                 if (response === "true") {
                     $("#submitValidationCodeForm span.validation-notification")
-                        .text("The validation code is already in use. Please select a different code.")
+                        .text("The validation code is already in use.Please select a different code.")
                         .show()
                         .fadeOut(5000);                    
                     justcontinue = false;
@@ -71,6 +78,15 @@
             }
         });
         return justcontinue;
+    };
+    isValidValidationCode = function (validationCode) {
+        if (validationCode === null || validationCode === undefined || validationCode ==="") return false;
+        if (validationCode.substring(0, 3) !== 'AAA') return false;
+        if (validationCode.substring(3, 4) !== '*') return false;
+        if (validationCode.substring(4, 5) !== 'Y' && validationCode.substring(4, 5) !== 'N') return false;
+        if (validationCode.substring(5, 7) !== '**') return false;
+        if (validationCode.substring(9, 10) !== '*') return false;
+        return true;
     };
 
     OpenEditValidation = function (id) {
