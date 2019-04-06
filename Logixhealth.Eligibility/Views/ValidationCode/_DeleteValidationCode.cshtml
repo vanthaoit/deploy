@@ -1,0 +1,36 @@
+﻿@model LogixHealth.Eligibility.Models.ViewModels.MdRequestValidationViewModel
+@{ 
+    var item = Model;
+}
+<!-- Delete Modal -->
+<div aria-hidden="true" aria-labelledby="deleteInsurance" class="modal fade" id="deleteValidationCode" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-top" role="document">
+        <div class="modal-content">
+            <form asp-action="DeleteValidationCode" asp-controller="ValidationCode" method="post">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white">Delete Validation Code</h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete - @item.ValidationCode - from the list of validation codes?
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100">
+                        <button class="btn btn-outline-primary" data-dismiss="modal" type="button">Cancel</button>
+                        <button class="btn btn-primary float-right" type="submit">Delete Validation Code</button>
+                    </div>
+                </div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="ValidationCode" />
+                <input type="hidden" asp-for="Description" />
+                <input type="hidden" asp-for="IsSelfPay" />
+                <input type="hidden" asp-for="IsInsurance" />
+                <input type="hidden" asp-for="CreatedDateTime" />
+                <input type="hidden" asp-for="ModifiedDateTime" />
+                <input type="hidden" asp-for="ModifiedBy" />
+
+            </form>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LogixHealth.Eligibility.DataAccess\LogixHealth.Eligibility.DataAccess.csproj" />
+    <ProjectReference Include="..\LogixHealth.Eligibility.Models\LogixHealth.Eligibility.Models.csproj" />
+  </ItemGroup>
+
+</Project>

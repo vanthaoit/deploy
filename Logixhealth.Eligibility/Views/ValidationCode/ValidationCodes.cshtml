@@ -1,0 +1,96 @@
+﻿@using LogixHealth.Eligibility.Models.ViewModels
+@using LogixHealth.Eligibility
+@model IEnumerable<LogixHealth.Eligibility.Models.ViewModels.MdRequestValidationViewModel>
+@{
+    ViewData["Title"] = "ValidationCodes";
+    var highlightItem = ViewBag.responseData;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData[CrossActionKeys.Tabs] = MenuConstants.Setup;
+    ViewData[CrossActionKeys.SubTabs] = SubMenuConstants.ValidationCodes;
+
+}
+
+<!--This is the tabbed navigation-->
+@await Html.PartialAsync("~/Views/ValidationCode/_SubTabValidations.cshtml")
+
+<!--This is search bar, icons and associated actions-->
+@await Html.PartialAsync("~/Views/ValidationCode/_SubTabValidationActions.cshtml")
+
+<div class="row">
+    <div class="col-12">
+        <table class="table" id="validationTable" style="width:100%">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="control"></th>
+                    <th class="text-nowrap">Validation Code</th>
+                    <th class="text-nowrap">Code Description</th>
+                    <th class="text-nowrap">Show Self-Pay</th>
+                    <th class="text-nowrap">Show Insurance</th>
+                    <th class="text-nowrap">Date Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr id=@("vc"+item.Id)>
+                        <td></td>
+                        <td>@item.ValidationCode</td>
+                        <td>@item.Description</td>
+                        <td>@(item.IsSelfPay ? "Yes" : "No")</td>
+                        <td>@(item.IsInsurance ? "Yes" : "No")</td>
+                        <td>@item.CreatedDateTime.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <div class="dropdown show">
+                                <a aria-expanded="false" aria-haspopup="true" class="btn btn-link" data-toggle="dropdown" href="#" role="button"><svg class="icon icon-lg icon-actions"><use xlink:href="#icon-actions"></use></svg></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" onclick="OpenEditValidation(@item.Id);" data-target="#editValidationCode" data-toggle="modal" href="#">Edit</a>
+                                    <a class="dropdown-item" onclick="OpenAuditTrails('@item.ValidationCode','@item.Description.Replace(Environment.NewLine, " ")')" data-target="#viewTrail" data-toggle="modal" href="#">View Audit Trail</a>
+                                    <a class="dropdown-item" onclick="DeleteValidation('@item.Id');" data-target="#deleteInsurance" data-toggle="modal" href="#">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<input type="hidden" id="highlightAddress" data-value="@ViewBag.responseData" />
+<input type="hidden" id="notificationAddress" data-value="@ViewBag.Message" />
+<input type="hidden" id="notificationAddressError" data-value="@ViewBag.MessageError" />
+
+<!-- Modals -->
+<!-- Add New Validation Code Modal -->
+@await Html.PartialAsync("~/Views/ValidationCode/_AddValidationCode.cshtml")
+<!-- Edit validation code Modal -->
+<div id="PreviewEditValidationCode">
+</div>
+<div id="PreviewAuditTrails">
+    @Html.Partial("~/Views/AuditTrail/_AuditTrails.cshtml", new List<AuditTrailViewModel>())
+</div>
+<div id="PreviewDeleteValidationCode"></div>
+
+<!-- Table More Details Modal -->
+<div aria-hidden="true" aria-labelledby="detailsTable" class="modal fade" id="detailsTable" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-top" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white">Insurance Name</h5><button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="tableMoreDetails"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/js/setup/validation-code.js"></script>
+    <script src="~/js/audittrail/audit-trail.js"></script>
+    <script src="~/js/plugins/jquery.table2excel.min.js"></script>
+}

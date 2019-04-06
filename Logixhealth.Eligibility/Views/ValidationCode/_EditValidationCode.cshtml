@@ -1,0 +1,91 @@
+﻿@model LogixHealth.Eligibility.Models.ViewModels.MdRequestValidationViewModel
+@{
+    
+    var item = Model;
+}
+
+@if (item != null)
+{
+    <div aria-hidden="true" aria-labelledby="editValidationCode" class="modal fade" id="editValidationCode" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-md modal-dialog-top" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white">Edit Validation Code</h5><button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <form asp-action="UpdateValidationCode" asp-controller="ValidationCode" method="post">
+                    <div class="modal-body">
+
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label" for="validationCode">Validation Code</label>
+                            <div class="col-8">
+                                <input class="form-control validation-code-value" id="validationCode" type="text" name="ValidationCode" value="@Model.ValidationCode" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label" for="EditCodeDescription">Code Description</label>
+                            <div class="col-8">
+                                <textarea class="form-control" id="EditCodeDescription" required name="Description" rows="3" oninvalid="this.setCustomValidity('Please enter a code description.')" oninput="setCustomValidity('')">@Model.Description</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label" for="editSelfPayRadio">Show Self-Pay</label>
+                            <div class="col-8 mt-2">
+                                @if (item.IsSelfPay)
+                                {
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input checked class="custom-control-input" id="editSelfPayRadio" value="true" name="IsSelfPay" type="radio"> <label class="custom-control-label" for="editSelfPayRadio">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="editSelfPayRadio2" value="false" name="IsSelfPay" type="radio"> <label class="custom-control-label" for="editSelfPayRadio2">No</label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="editSelfPayRadio" value="true" name="IsSelfPay" type="radio"> <label class="custom-control-label" for="editSelfPayRadio">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input checked class="custom-control-input" id="editSelfPayRadio2" value="false" name="IsSelfPay" type="radio"> <label class="custom-control-label" for="editSelfPayRadio2">No</label>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-form-label" for="editInsuranceRadio">Show Insurance</label>
+                            <div class="col-8 mt-2">
+                                @if (item.IsInsurance)
+                                {
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input checked class="custom-control-input" id="editInsuranceRadio" value="true" name="IsInsurance" type="radio"> <label class="custom-control-label" for="editInsuranceRadio">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="editInsuranceRadio2" value="false" name="IsInsurance" type="radio"> <label class="custom-control-label" for="editInsuranceRadio2">No</label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="editInsuranceRadio" value="true" name="IsInsurance" type="radio"> <label class="custom-control-label" for="editInsuranceRadio">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input checked class="custom-control-input" id="editInsuranceRadio2" value="false" name="IsInsurance" type="radio"> <label class="custom-control-label" for="editInsuranceRadio2">No</label>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="w-100">
+                            <button class="btn btn-outline-primary" data-dismiss="modal" type="button">Cancel</button> <button class="btn btn-primary float-right" id="validation-code-edit" type="submit">Save Validation Code</button>
+                        </div>
+                    </div>
+                    <input type="hidden" asp-for="CreatedDateTime" />
+                    <input type="hidden" asp-for="ModifiedBy" />
+                    <input type="hidden" asp-for="Id" />
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,43 @@
+﻿@using LogixHealth.Eligibility
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-4 px-0">
+        <li class="breadcrumb-item text-uppercase">
+            <a class="text-dark" href="#">270/271 Field Values</a>
+        </li>
+        <li class="breadcrumb-item text-uppercase">
+            <a class="text-dark" href="#">Payer Configuration</a>
+        </li>
+        <li class="breadcrumb-item text-uppercase">
+            <a class="text-dark" href="#">Client</a>
+        </li>
+        @if ((string)ViewData[CrossActionKeys.SubTabs] == SubMenuConstants.ServiceTypeCodes)
+        {
+            <text>
+                <li class="breadcrumb-item text-uppercase text-active">
+            </text>
+        }
+        else
+        {
+            <text>
+            <li class="breadcrumb-item text-uppercase">
+            </text>
+        }
+        <a class="text-dark" asp-controller="ServiceTypeCode" asp-action="ServiceTypeCodes">Service Type Codes</a>
+    </li>
+    @if ((string)ViewData[CrossActionKeys.SubTabs] == SubMenuConstants.ValidationCodes)
+    {
+        <text>
+            <li class="breadcrumb-item text-uppercase text-active">
+        </text>
+    }
+    else
+    {
+        <text>
+        <li class="breadcrumb-item text-uppercase">
+        </text>
+    }
+
+    <a class="text-dark" asp-controller="ValidationCode" asp-action="ValidationCodes">Validation Codes</a>
+</li>
+</ol>
+</nav>

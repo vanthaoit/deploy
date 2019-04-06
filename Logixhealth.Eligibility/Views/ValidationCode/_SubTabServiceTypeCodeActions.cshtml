@@ -1,0 +1,75 @@
+﻿<div class="row">
+    <div class="col">
+        <div class="input-group mb-2">
+            <div class="one-ninety-six no-padding filterComponent">
+                <div class="input-group">
+                    <label class="icon-label">
+                        <svg class="icon icon-sm icon-input icon-search">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                        <input class="form-control full-width size-input" id="searchServiceTable" placeholder="Search" type="text">
+                    </label>
+                </div>
+            </div>
+            <!-- Table Filter -->
+
+            <div class="btn-group padding-function">
+                <button class="btn btn-gray-med lh-0 size-function" data-toggle="dropdown" type="button">
+                    <span class="icn filter" aria-hidden="true"></span>
+                </button>
+                <div class="service-type-code-filter dropdown-menu dropdown-menu-right no-close p-2">
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis-filter" data-column="0" id="serviceTypeCodeFilter" type="checkbox" checked>
+                        <label class="custom-control-label text-nowrap" for="serviceTypeCodeFilter">Service Type Code</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis-filter" data-column="1" id="codeDescriptionFilter" type="checkbox" checked>
+                        <label class="custom-control-label" for="codeDescriptionFilter">Code Description</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis-filter" data-column="2" id="dateCreatedFilter" type="checkbox" checked>
+                        <label class="custom-control-label" for="dateCreatedFilter">Date Created</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Column Picker -->
+            <div class="btn-group padding-function">
+                <button class="btn btn-gray-med lh-0" data-toggle="dropdown" type="button">
+                    <svg class="icon icon-column-picker"><use xlink:href="#icon-column-picker"></use></svg>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-right no-close p-2">
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis" data-column="0" id="serviceTypeCodeCol" type="checkbox" checked disabled>
+                        <label class="custom-control-label text-nowrap" for="serviceTypeCodeCol">Service Type Code</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis" data-column="1" id="codeDescriptionCol" type="checkbox" checked disabled>
+                        <label class="custom-control-label" for="codeDescriptionCol">Code Description</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis" data-column="2" id="dateCreatedCol" type="checkbox" checked>
+                        <label class="custom-control-label" for="dateCreatedCol">Date Created</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input toggle-vis" data-column="3" id="actionsCol" type="checkbox" checked disabled>
+                        <label class="custom-control-label" for="actionsCol">Actions</label>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" id="setDefaultCol" type="checkbox">
+                        <label class="custom-control-label" for="setDefaultCol">Set as Default</label>
+                    </div>
+                    <button class="btn btn-block btn-primary" type="submit">Apply</button>
+                </div>
+            </div>
+
+            <button class="btn btn-gray-med margin-function size-function" onclick="ExportServiceCodeList()">
+                <span class="icn export" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-outline-primary btn-block-sm float-right" data-target="#addServiceTypeCode" data-toggle="modal">Add New Service Type Code</button>
+    </div>
+</div>
