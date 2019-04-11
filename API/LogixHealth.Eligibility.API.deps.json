@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1/win-x86",
-    "signature": "b1b154b057a6261b0057b6164990ccbc5135cc14"
+    "signature": "39421a7b1bbe5bdd4aeb9c398545a7e6c5c70828"
   },
   "compilationOptions": {
     "defines": [
@@ -28,12 +28,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.1.0",
           "LogixHealth.Eligibility.BusinessFunctions": "1.0.0",
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
-          "LogixHealth.Eligibility.Database": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0",
           "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
           "LogixHealth.EnterpriseLogger.Extensions.Core": "2019.1.0.1",
           "Microsoft.AspNetCore.App": "2.1.8",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6",
           "Microsoft.NETCore.App": "2.1.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
         },
@@ -67,6 +65,16 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Dapper/1.50.5": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.5.1",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Dapper.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -1273,7 +1281,7 @@
           "System.Collections": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -2258,7 +2266,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2441,7 +2449,7 @@
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2564,7 +2572,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2665,7 +2673,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -2739,12 +2747,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.TypeExtensions/4.4.0": {},
       "System.Resources.ResourceManager/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -3171,7 +3174,7 @@
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -3210,6 +3213,7 @@
       "LogixHealth.Eligibility.BusinessFunctions/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.2.1",
+          "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0"
         },
         "compile": {
@@ -3217,25 +3221,18 @@
         }
       },
       "LogixHealth.Eligibility.DataAccess/1.0.0": {
-        "compile": {
-          "LogixHealth.Eligibility.DataAccess.dll": {}
-        }
-      },
-      "LogixHealth.Eligibility.Database/1.0.0": {
         "dependencies": {
           "LogixHealth.Eligibility.Models": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.1.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.8",
+          "LogixHealth.EnterpriseLibrary.DataAccess.Core": "2019.1.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
           "Microsoft.Extensions.Configuration.Json": "2.1.1"
         },
         "compile": {
-          "LogixHealth.Eligibility.Database.dll": {}
+          "LogixHealth.Eligibility.DataAccess.dll": {}
         }
       },
       "LogixHealth.Eligibility.Models/1.0.0": {
         "dependencies": {
-          "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6"
         },
         "compile": {
@@ -3252,6 +3249,14 @@
         },
         "compile": {
           "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.dll": {}
+        }
+      },
+      "LogixHealth.EnterpriseLibrary.DataAccess.Core/2019.1.0": {
+        "dependencies": {
+          "Dapper": "1.50.5"
+        },
+        "compile": {
+          "LogixHealth.EnterpriseLibrary.DataAccess.Core.dll": {}
         }
       },
       "LogixHealth.EnterpriseLogger.Extensions.Core/2019.1.0.1": {
@@ -3277,12 +3282,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.1.0",
           "LogixHealth.Eligibility.BusinessFunctions": "1.0.0",
           "LogixHealth.Eligibility.DataAccess": "1.0.0",
-          "LogixHealth.Eligibility.Database": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0",
           "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core": "2019.1.0",
           "LogixHealth.EnterpriseLogger.Extensions.Core": "2019.1.0.1",
           "Microsoft.AspNetCore.App": "2.1.8",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6",
           "Microsoft.NETCore.App": "2.1.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
         },
@@ -3321,6 +3324,19 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "0.0.0.0",
             "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "Dapper/1.50.5": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.5.1",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "1.50.5.0",
+            "fileVersion": "1.50.5.0"
           }
         }
       },
@@ -4816,7 +4832,7 @@
           "System.Collections": "4.3.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -6680,7 +6696,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -6877,7 +6893,7 @@
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -7009,7 +7025,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -7120,7 +7136,7 @@
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -7194,12 +7210,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.TypeExtensions/4.4.0": {},
       "System.Resources.ResourceManager/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -7661,7 +7672,7 @@
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -7700,6 +7711,7 @@
       "LogixHealth.Eligibility.BusinessFunctions/1.0.0": {
         "dependencies": {
           "AutoMapper": "6.2.1",
+          "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "LogixHealth.Eligibility.Models": "1.0.0"
         },
         "runtime": {
@@ -7707,25 +7719,18 @@
         }
       },
       "LogixHealth.Eligibility.DataAccess/1.0.0": {
-        "runtime": {
-          "LogixHealth.Eligibility.DataAccess.dll": {}
-        }
-      },
-      "LogixHealth.Eligibility.Database/1.0.0": {
         "dependencies": {
           "LogixHealth.Eligibility.Models": "1.0.0",
-          "Microsoft.AspNetCore.Identity": "2.1.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.8",
+          "LogixHealth.EnterpriseLibrary.DataAccess.Core": "2019.1.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
           "Microsoft.Extensions.Configuration.Json": "2.1.1"
         },
         "runtime": {
-          "LogixHealth.Eligibility.Database.dll": {}
+          "LogixHealth.Eligibility.DataAccess.dll": {}
         }
       },
       "LogixHealth.Eligibility.Models/1.0.0": {
         "dependencies": {
-          "LogixHealth.Eligibility.DataAccess": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6"
         },
         "runtime": {
@@ -7742,6 +7747,14 @@
         },
         "runtime": {
           "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core.dll": {}
+        }
+      },
+      "LogixHealth.EnterpriseLibrary.DataAccess.Core/2019.1.0": {
+        "dependencies": {
+          "Dapper": "1.50.5"
+        },
+        "runtime": {
+          "LogixHealth.EnterpriseLibrary.DataAccess.Core.dll": {}
         }
       },
       "LogixHealth.EnterpriseLogger.Extensions.Core/2019.1.0.1": {
@@ -7780,6 +7793,13 @@
       "sha512": "sha512-IWvYn9BMBrIL7bRfDBhkmEtYmTlbxjPDGfhgOEJFI3vvdctfn+wgtZNDu1NhZvc63dB+m7XIf1HxCm1SsNMizA==",
       "path": "automapper.extensions.microsoft.dependencyinjection/3.1.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.3.1.0.nupkg.sha512"
+    },
+    "Dapper/1.50.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1vPpX7WQmQCIb7rwlGOUoVs/yWZhVKvdhuG7WrJV+V+qsP8btnrrCqVWHENAlJxBAnUw5rhWfmuba9/Egei9MA==",
+      "path": "dapper/1.50.5",
+      "hashPath": "dapper.1.50.5.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -9615,12 +9635,12 @@
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.TypeExtensions/4.3.0": {
+    "System.Reflection.TypeExtensions/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+      "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
+      "path": "system.reflection.typeextensions/4.4.0",
+      "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.3.0": {
       "type": "package",
@@ -9961,17 +9981,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "LogixHealth.Eligibility.Database/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "LogixHealth.Eligibility.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "LogixHealth.EnterpriseLibrary.AppServices.Gateway.Core/2019.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogixHealth.EnterpriseLibrary.DataAccess.Core/2019.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
