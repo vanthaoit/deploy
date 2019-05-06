@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>LogixEligibility - Edit Payer Configuration</title>
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <link href="http://scripts.logixhealth.com/favicon.ico" rel="shortcut icon">
+  <link href="../../assets/css/bootstrap-select.css" rel="stylesheet">
+  <link href="../../assets/css/select2.css" rel="stylesheet">
+  <link href="../../Datatables/DataTables-1.10.18/css/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="../../Datatables/Responsive-2.2.2/css/responsive.bootstrap4.css" rel="stylesheet">
+  <link href="../../css/styles.css" rel="stylesheet">
+  <link href="../../css/menu.css" rel="stylesheet">
+  <link href="../../css/logix.css" rel="stylesheet">
+</head>
+<body>
+  <div id="Svg-Wrapper"></div>
+  <nav class="navbar navbar-expand-md border border-bottom-0 navbar-light bg-white sidebarNavigation" data-sidebarclass="navbar-light bg-white">
+      <a href="#"><svg class="icon-brand icon-lg icon-LogixHealth"><use xlink:href="#icon-LogixHealth"></use></svg></a>
+      <button aria-controls="navbar-LogixHealth" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed ml-auto"
+        data-target="#navbar-LogixHealth" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown my-auto">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link text-primary d-none d-md-block dropdown-toggle" data-toggle="dropdown"
+              href="#" id="dropdownUser">Good Morning, Ryan Gosling</a>
+            <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Settings</a>
+              <a class="dropdown-item" href="#">Switch User</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+          <li class="nav-item my-auto d-none d-md-block border-left">
+            <a class="nav-link" href="#" data-placement="bottom" data-toggle="tooltip" data-trigger="hover" title="Home"><svg
+                class="icon icon-home"><use xlink:href="#icon-home"></use></svg></a>
+          </li>
+          <li class="nav-item my-auto d-none d-md-block">
+            <div class="dropdown">
+              <span id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="menu">
+                <a class="nav-link" href="#" data-placement="bottom" data-toggle="tooltip" data-trigger="hover" title="Notifications"><svg
+                    class="icon icon-notification"><use xlink:href="#icon-notification"></use></svg></a>
+              </span>
+              <div class="dropdown-menu no-close dropdown-menu-right border border-0" aria-labelledby="dropdownMenu2">
+                <div class="card" style="width: 20rem;">
+                  <div class="card-header bg-light text-primary cg-bold text-uppercase">Notifications
+                  </div>
+                  <div class="dropdown-500">
+                    <div class="card-header cg-bold text-uppercase">New
+                    </div>
+                    <div class="card-body border-bottom">
+                      <h6 class="card-title cg-bold text-info text-uppercase">New Client Added <span class="float-right close-icon alert-close">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">Academic Emergency Pysicians - Fittzgerald has been added as a new
+                        client.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                    <div class="card-body border-bottom">
+                      <h6 class="card-title cg-bold text-purple text-uppercase">New File <span class="float-right close-icon">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">Academic Emergency Care has been added as a new client.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                    <div class="card-body border-bottom">
+                      <h6 class="card-title cg-bold text-purple text-uppercase">New File <span class="float-right close-icon">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">Academic Emergency Care has been added as a new client.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                    <div class="card-body border-bottom">
+                      <h6 class="card-title cg-bold text-info text-uppercase">New Item Added <span class="float-right close-icon">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">Academic Emergency Care has posted a new item.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                    <div class="card-header cg-bold text-uppercase">Seen
+                    </div>
+                    <div class="card-body border-bottom">
+                      <h6 class="card-title cg-bold text-orange text-uppercase">File Not Received <span class="float-right close-icon">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">There was an error with file name [.pdf] Please review.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                    <div class="card-body">
+                      <h6 class="card-title cg-bold text-orange text-uppercase">File Not Received <span class="float-right close-icon">&times;</span></h6>
+                      <p class="card-text text-dark mb-0">There was an error with file name [.pdf] Please review.</p>
+                      <p class="card-text small text-black-50">Today at 00:00:00 XX</p>
+                    </div>
+                  </div>
+                  <div class="card-footer w-100">
+                    <div class="btn-group d-flex" role="group">
+                      <a href="" class="btn btn-primary mr-3 w-100">Show Archived</a>
+                      <a href="" class="btn btn-primary w-100">Archive All</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item my-auto d-none d-md-block">
+            <a class="nav-link" href="#" data-placement="bottom" data-toggle="tooltip" data-trigger="hover" title="Help"><svg
+                class="icon icon-help"><use xlink:href="#icon-help"></use></svg></a>
+          </li>
+          <li class="nav-item my-auto d-none d-md-block">
+            <a class="nav-link" href="#" data-placement="bottom" data-toggle="tooltip" data-trigger="hover" title="Settings"><svg
+                class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg></a>
+          </li>
+          <li class="nav-item dropdown border-left">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link d-none d-md-block cg-bold" data-toggle="dropdown" href="#"
+              id="dropdownApp">My Apps <span class="navbar-toggler-icon"></span></a>
+            <div aria-labelledby="dropdownApp" class="dropdown-menu dropdown-menu-right dropdown-500">
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixAnalytics"><use xlink:href="#icon-LogixAnalytics"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixAppointments"><use xlink:href="#icon-LogixAppointments"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixAutomation"><use xlink:href="#icon-LogixAutomation"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixBilling"><use xlink:href="#icon-LogixBilling"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixChartview"><use xlink:href="#icon-LogixChartview"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixCodify"><use xlink:href="#icon-LogixCodify"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixCompliance"><use xlink:href="#icon-LogixCompliance"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixConnect"><use xlink:href="#icon-LogixConnect"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixDelivery"><use xlink:href="#icon-LogixDelivery"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixDiagnosis"><use xlink:href="#icon-LogixDiagnosis"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixEligibility"><use xlink:href="#icon-LogixEligibility"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixFeedback"><use xlink:href="#icon-LogixFeedback"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixGarden"><use xlink:href="#icon-LogixGarden"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixIncentive"><use xlink:href="#icon-LogixIncentive"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixIntegrator"><use xlink:href="#icon-LogixIntegrator"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixIntelligence"><use xlink:href="#icon-LogixIntelligence"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixLearning"><use xlink:href="#icon-LogixLearning"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixPace"><use xlink:href="#icon-LogixPace"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixPaidright"><use xlink:href="#icon-LogixPaidright"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixPayments"><use xlink:href="#icon-LogixPayments"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixPerformance"><use xlink:href="#icon-LogixPerformance"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixPracticeManagement"><use xlink:href="#icon-LogixPracticeManagement"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixProjection"><use xlink:href="#icon-LogixProjection"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixReconciler"><use xlink:href="#icon-LogixReconciler"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixReports"><use xlink:href="#icon-LogixReports"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixResearch"><use xlink:href="#icon-LogixResearch"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixScheduler"><use xlink:href="#icon-LogixScheduler"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixStaffing"><use xlink:href="#icon-LogixStaffing"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixSubmitter"><use xlink:href="#icon-LogixSubmitter"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixTechnology"><use xlink:href="#icon-LogixTechnology"></use></svg></a>
+              <a class="dropdown-logo" href="#"><svg class="icon-brand icon-lg icon-LogixTickets"><use xlink:href="#icon-LogixTickets"></use></svg></a>
+              <!-- ... -->
+            </div>
+          </li>
+        </ul>
+        <div class="off-canvas position-left d-md-none" data-content-scroll="false" data-off-canvas="" id="mobile-menu">
+          <!-- Mobile Menu Items-->
+          <div class="btn-group-vertical d-block">
+            <a class="btn btn-lg btn-primary btn-block font-weight-light text-left" href="../submission-tracker.html">Submission Tracker</a>
+            <a class="btn btn-lg btn-primary btn-block font-weight-light text-left" href="../file-cabinet.html">File Cabinet</a>
+            <a class="btn btn-lg btn-primary btn-block font-weight-light text-left" href="../file-creation.html">File Creation</a>
+            <!-- ... -->
+            <button class="btn btn-lg btn-primary font-weight-light text-left filter-toggle collapsed" type="button" data-toggle="collapse" data-target="#setupDrop" aria-expanded="false" aria-controls="setupDrop">
+              Setup
+            </button>
+            <div class="collapse" id="setupDrop">
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="270-271-field-values.html">270/271 Field Values</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="payer-configuration.html">Payer Configuration</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="client.html">Client</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="service-type-codes.html">Service Type Codes</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="validation-codes.html">Validation Codes</a>
+              <!-- ... -->
+            </div>
+            <button class="btn btn-lg btn-primary font-weight-light text-left filter-toggle collapsed" type="button" data-toggle="collapse" data-target="#adminDrop" aria-expanded="false" aria-controls="adminDrop">
+              Admin
+            </button>
+            <div class="collapse" id="adminDrop">
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="../roles.html">Roles</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="../users.html">Users</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="../master-audit-trail.html">Master Audit Trail</a>
+              <a class="btn btn-lg btn-primary-lite btn-block pl-4 font-weight-light text-left" href="../notification-manager.html">Notifications Manager</a>
+              <!-- ... -->
+            </div>
+          </div>
+          <button aria-controls="collapseExample" aria-expanded="false" class="btn btn-lg btn-default btn-block font-weight-light text-left filter-toggle collapsed" data-target="#collapseExample" data-toggle="collapse" type="button">
+            My Apps
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixAnalytics"><use xlink:href="#icon-LogixAnalytics"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixAppointments"><use xlink:href="#icon-LogixAppointments"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixAutomation"><use xlink:href="#icon-LogixAutomation"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixBilling"><use xlink:href="#icon-LogixBilling"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixChartview"><use xlink:href="#icon-LogixChartview"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixCodify"><use xlink:href="#icon-LogixCodify"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixCompliance"><use xlink:href="#icon-LogixCompliance"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixConnect"><use xlink:href="#icon-LogixConnect"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixDelivery"><use xlink:href="#icon-LogixDelivery"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixDiagnosis"><use xlink:href="#icon-LogixDiagnosis"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixEligibility"><use xlink:href="#icon-LogixEligibility"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixFeedback"><use xlink:href="#icon-LogixFeedback"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixGarden"><use xlink:href="#icon-LogixGarden"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixIncentive"><use xlink:href="#icon-LogixIncentive"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixIntegrator"><use xlink:href="#icon-LogixIntegrator"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixIntelligence"><use xlink:href="#icon-LogixIntelligence"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixLearning"><use xlink:href="#icon-LogixLearning"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixPace"><use xlink:href="#icon-LogixPace"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixPaidright"><use xlink:href="#icon-LogixPaidright"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixPayments"><use xlink:href="#icon-LogixPayments"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixPerformance"><use xlink:href="#icon-LogixPerformance"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixPracticeManagement"><use xlink:href="#icon-LogixPracticeManagement"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixProjection"><use xlink:href="#icon-LogixProjection"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixReconciler"><use xlink:href="#icon-LogixReconciler"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixReports"><use xlink:href="#icon-LogixReports"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixResearch"><use xlink:href="#icon-LogixResearch"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixScheduler"><use xlink:href="#icon-LogixScheduler"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixStaffing"><use xlink:href="#icon-LogixStaffing"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixSubmitter"><use xlink:href="#icon-LogixSubmitter"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixTechnology"><use xlink:href="#icon-LogixTechnology"></use></svg></a>
+              <a class="nav-link" href="#"><svg class="icon-brand icon-lg icon-LogixTickets"><use xlink:href="#icon-LogixTickets"></use></svg></a>
+            </div>
+          </div>
+          <a class="btn btn-lg btn-light btn-block font-weight-light text-left" href="#"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg> Home</a>
+          <a class="btn btn-lg btn-light btn-block font-weight-light text-left" href="#"><svg class="icon icon-notification"><use xlink:href="#icon-notification"></use></svg> Notifications</a>
+          <a class="btn btn-lg btn-light btn-block font-weight-light text-left" href="#"><svg class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg> Settings</a>
+          <a class="btn btn-lg btn-light btn-block font-weight-light text-left" href="#"><svg class="icon icon-help"><use xlink:href="#icon-help"></use></svg> Help</a>
+          <a class="btn btn-lg btn-light btn-block font-weight-light text-left" href="#"><svg class="icon icon-export"><use xlink:href="#icon-export"></use></svg> Logout</a>
+          <!-- ... -->
+          <!-- Mobile Footer -->
+          <div class="my-2 my-lg-0">
+            <ul class="list-unstyled text-center">
+              <li>Powered by</li>
+              <li>Copyright &copy; 2019 LogixHealth. All Rights Reserved.</li>
+              <li>Version | Terms of Use | Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Secondary Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary border-bottom-nav">
+      <a class="navbar-brand d-block d-md-none text-uppercase cg-bold" href="#">Setup</a>
+      <div class="collapse navbar-collapse" id="navbar-LogixHealth">
+        <ul class="navbar-nav mr-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="../submission-tracker.html">Submission Tracker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../file-cabinet.html">File Cabinet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../file-creation.html">File Creation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-active dropdown-toggle" data-toggle="dropdown" href="#" id="menuSetup">Setup</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="270-271-field-values.html">270/271 Field Values</a>
+              <a class="dropdown-item" href="payer-configuration.html">Payer Configuration</a>
+              <a class="dropdown-item" href="client.html">Client</a>
+              <a class="dropdown-item" href="service-type-codes.html">Service Type Codes</a>
+              <a class="dropdown-item" href="validation-codes.html">Validation Codes</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="menuAdmin">Admin</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../admin/roles.html">Roles</a>
+              <a class="dropdown-item" href="../admin/users.html">Users</a>
+              <a class="dropdown-item" href="../admin/master-audit-trail.html">Master Audit Trail</a>
+              <a class="dropdown-item" href="../admin/notification-manager.html">Notifications Manager</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="container-fluid px-lg-5"> <!-- Container -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mt-4 px-0">
+        <li class="breadcrumb-item text-uppercase">
+          <a class="text-gray-med" href="payer-configuration.html">Payer Configuration</a>
+        </li>
+        <li class="breadcrumb-item cg-bold text-uppercase text-primary">
+          <a href="edit-payer-configuration.html">Edit Payer Configuration</a>
+        </li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h4 class="text-primary mt-3">Payer Details</h4>
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="payerInsuranceName">Insurance Name</label>
+            <div class="col-sm-9">
+              <input class="form-control" id="payerInsuranceName" type="text" autofocus>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="payorID">Payor ID</label>
+            <div class="col-sm-9">
+              <input class="form-control" id="payorID" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Save Location</label>
+            <input class="file" name="img[]" type="file">
+            <div class="input-group col-sm-9">
+              <input class="form-control" disabled type="text">
+              <span class="input-group-btn">
+                <button class="browse btn btn-outline-primary ml-1" type="button"><span class="input-group-btn">Browse</span></button></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">271 Location</label>
+            <input class="file" name="img[]" type="file">
+            <div class="input-group col-sm-9">
+              <input class="form-control" disabled type="text">
+              <span class="input-group-btn">
+                <button class="browse btn btn-outline-primary ml-1" type="button"><span class="input-group-btn">Browse</span></button></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label" for="payerFileName">File Name <svg class="icon icon-sm icon-information mb-1" data-html="true" data-placement="bottom" data-toggle="tooltip" title="<p class='text-justify mb-0'><&zwnj;CLIENT> = Client Name <br> <&zwnj;DATE> = MMDDYYYY <br><&zwnj;NM> = Numeric Month <br> <&zwnj;DD> = Numeric day of the Month <br> <&zwnj;YY> = Numeric year (2 digit) <br> <&zwnj;YYYY> = Numeric year (4 digit) <br> <&zwnj;TIME> = 1234</p>"><use xlink:href="#icon-information"></use></svg></label>
+            <div class="col-sm-9">
+              <input class="form-control" id="payerFileName" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+              <div class="custom-control custom-checkbox mb-2">
+                <input checked class="custom-control-input" id="appendSequential" type="checkbox"> <label class="custom-control-label" for="appendSequential">Append sequential numbers to the end of the file name</label>
+              </div>
+              <button class="btn btn-outline-primary float-right" data-target="#addNote" data-toggle="modal" type="button">View/Add Note</button>
+              <button class="btn btn-outline-primary mx-1 float-right" data-target="#viewAttachments" data-toggle="modal" type="button">View/Add Attachments</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  <!-- Add Schedule -->  
+    <h4 class="text-primary mt-3">Schedule Configuration</h4>
+    <div>
+      <div class="tooltest0" id="tooltest0">
+        <div class="row">
+          
+          <div class="col-12 col-md-8 col-lg-6">
+            <form>
+
+              <div class="row my-3">
+                <div class="col-6">
+                    <label class="cg-bold">Schedule <span class="count_agent">1</span></label>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-link button-remove float-right" type="button"><h1 class="m-0">&times;</h1></button>
+                </div>
+              </div>           
+             
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="scheduleConfigClient1">Client(s)</label>
+                <div class="col-sm-9">
+                  <select class="form-control form-control-sm select2-single toollist" id="scheduleConfigClient1" style="width: 100%">
+                    <option>
+                    </option>
+                    <option value="all">
+                      All Clients
+                    </option>
+                    <option value="some">
+                      Some Clients
+                    </option>
+                    <option value="half">
+                      Half Clients
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="scheduleConfigSelfPay1">Self Pay</label>
+                <div class="col-sm-9">
+                  <select class="form-control form-control-sm select2-single toollist" id="scheduleConfigSelfPay1" style="width: 100%">
+                    <option>
+                    </option>
+                    <option value="Yes">
+                      Yes
+                    </option>
+                    <option value="No">
+                      No
+                    </option>
+                    <option value="Maybe">
+                      Maybe
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="scheduleConfigDateDif1">Date Difference</label>
+                <div class="col-sm-9">
+                  <input class="form-control" id="scheduleConfigDateDif1" type="text">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="scheduleConfigRunTime1">Run Time</label>
+                <div class="col-sm-9">
+                  <select class="form-control form-control-sm select2-single toollist" id="scheduleConfigRunTime1" style="width: 100%">
+                    <option>
+                    </option>
+                    <option value="3">
+                      3:00AM
+                    </option>
+                    <option value="4">
+                      4:00AM
+                    </option>
+                    <option value="5">
+                      5:00AM
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="scheduleConfigRunDay1">Run Day(s)</label>
+                <div class="col-sm-9">
+                  <select class="form-control form-control-sm select2-single toollist" id="scheduleConfigRunDay1" style="width: 100%" multiple>
+                    <option></option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="responeTime1">271 Response Time</label>
+                <div class="col-sm-9">
+                  <select class="form-control form-control-sm  toollist" id="responeTime1" style="width: 100%">
+                    <option>
+                    </option>
+                    <option value="1">
+                      1 Day
+                    </option>
+                    <option value="2">
+                      2 Days
+                    </option>
+                    <option value="3">
+                      3 Days
+                    </option>
+                    <option value="4">
+                      4 Days
+                    </option>
+                    <option value="5">
+                      5 Days
+                    </option>
+                    <option value="6">
+                      6 Days
+                    </option>
+                    <option value="7">
+                      1 Week
+                    </option>
+                    <option value="14">
+                      2 Weeks
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="tool-placeholder"></div>
+      <div>
+
+        <input class="btn btn-outline-primary button-add" type="button" value="Add Schedule">
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-12 col-md-6 mt-5">
+        <h4 class="text-primary mt-3">Linked Insurances</h4>
+      </div>
+    </div>
+
+  <!-- Table Navigation -->
+  <div class="row">
+      <div class="col-md-6">
+        <div class="input-group mb-2">
+          <label class="icon-label"><svg class="icon icon-sm icon-input icon-search">
+          <use xlink:href="#icon-search"></use></svg> <input class="form-control" placeholder="Search" type="text"></label>
+  <!-- Filters -->
+          <div class="btn-group">
+              <button class="btn btn-gray-med lh-0 mx-1" data-toggle="dropdown" type="button"><svg class="icon icon-filter"><use xlink:href="#icon-filter"></use></svg></button>
+              <div class="dropdown-menu dropdown-menu-right no-close">
+                <div id="accordion">
+                  <div class="card border-0">
+                    <div class="card-header bg-white p-2" id="headingOne">
+                      <a data-toggle="collapse" data-target="#collapseOne" class="text-dark filter-toggle d-block" href="javascript:void(0)" aria-expanded="true" aria-controls="collapseOne">Filter options X</a>
+                    </div>
+                    <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordion" id="collapseOne">
+                      <div class="card-body border-bottom">
+                        <div class="custom-control custom-checkbox">
+                          <input checked class="custom-control-input" id="filterXoptA" type="checkbox">
+                          <label class="custom-control-label" for="filterXoptA">Filter A</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="filterXoptB" type="checkbox">
+                          <label class="custom-control-label mb-0" for="filterXoptB">Filter B</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <div class="card-header bg-white p-2" id="headingTwo">
+                      <a data-toggle="collapse" data-target="#collapseTwo" class="text-dark filter-toggle d-block collapsed" href="javascript:void(0)" aria-expanded="true" aria-controls="collapseTwo">Filter options Y</a>
+                    </div>
+                    <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordion" id="collapseTwo">
+                      <div class="card-body border-bottom">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="filterYoptA" type="checkbox">
+                          <label class="custom-control-label" for="filterYoptA">Filter A</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="filterYoptB" type="checkbox">
+                          <label class="custom-control-label mb-0" for="filterYoptB">Filter B</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card border-0">
+                    <div class="card-header bg-white p-2" id="headingThree">
+                        <a data-toggle="collapse" data-target="#collapseThree" class="text-dark filter-toggle d-block collapsed" href="javascript:void(0)" aria-expanded="true" aria-controls="collapseThree">Filter options Z</a>
+                      </div>
+                    <div aria-labelledby="headingThree" class="collapse" data-parent="#accordion" id="collapseThree">
+                      <div class="card-body">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="filterZoptA" type="checkbox">
+                          <label class="custom-control-label" for="filterZoptA">Filter A</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="filterZoptB" type="checkbox">
+                          <label class="custom-control-label mb-0" for="filterZoptB">Filter B</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <!-- Column Picker -->
+            <div class="btn-group">
+                <button class="btn btn-gray-med lh-0" data-toggle="dropdown" type="button"><svg class="icon icon-column-picker"><use xlink:href="#icon-column-picker"></use></svg></button>
+                <div class="dropdown-menu dropdown-menu-right no-close p-2">
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input toggle-vis" data-column="2" id="insuranceNameCol" type="checkbox" disabled>
+                    <label class="custom-control-label text-nowrap" for="insuranceNameCol">Insurance Name</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input toggle-vis" data-column="3" id="payerNumberCol" type="checkbox" checked>
+                    <label class="custom-control-label" for="payerNumberCol">Payer Number</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input toggle-vis" data-column="4" id="stateCol" type="checkbox" checked>
+                    <label class="custom-control-label" for="stateCol">State</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input toggle-vis" data-column="5" id="cityCol" type="checkbox" checked>
+                    <label class="custom-control-label" for="cityCol">City</label>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" id="setDefaultCol" type="checkbox">
+                    <label class="custom-control-label" for="setDefaultCol">Set as Default</label>
+                  </div>
+                  <button class="btn btn-block btn-primary" type="button">Apply</button>
+                </div>
+              </div>
+              <button class="btn btn-gray-med lh-0 ml-1"><svg class="icon icon-export"><use xlink:href="#icon-export"></use></svg></button>
+            </div>
+          </div>
+        </div>
+
+<!-- Linked Insurances Table
+          ================================================== -->
+    <div class="row">
+      <div class="col-lg-12">
+        <table class="table dt-responsive nowrap" id="linkedInsurancesTable" style="width:100%">
+          <thead class="thead-dark">
+            <tr>
+              <th></th>
+              <th>Select</th>
+              <th>Insurance Name</th>
+              <th>Payer Number</th>
+              <th>State</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="carpentersHealth" type="checkbox"> <label class="custom-control-label" for="carpentersHealth">&zwnj;</label>
+                </div>
+              </td>
+              <td>Carpenters Health and Wellcare</td>
+              <td></td>
+              <td>MO</td>
+              <td>Hazelwood</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input class="custom-control-input" id="gaurd" type="checkbox"> <label class="custom-control-label" for="gaurd">&zwnj;</label>
+                </div>
+              </td>
+              <td>Guard Insurance Group</td>
+              <td>99999</td>
+              <td>PA</td>
+              <td>Wilkes-Barre</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="meritain" type="checkbox"> <label class="custom-control-label" for="meritain">&zwnj;</label>
+                </div>
+              </td>
+              <td>Meritain Health</td>
+              <td>41124</td>
+              <td>MN</td>
+              <td>Minneapolis</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input class="custom-control-input" id="medical15" type="checkbox"> <label class="custom-control-label" for="medical15">&zwnj;</label>
+                </div>
+              </td>
+              <td>$15k Medical Only Program</td>
+              <td></td>
+              <td>OH</td>
+              <td>Cincinnati</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="dgaHealth" type="checkbox"> <label class="custom-control-label" for="dgaHealth">&zwnj;</label>
+                </div>
+              </td>
+              <td>-DGA- Prodcuers Health Plan</td>
+              <td></td>
+              <td>CA</td>
+              <td>Los Angeles</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="fighterWing" type="checkbox"> <label class="custom-control-label" for="fighterWing">&zwnj;</label>
+                </div>
+              </td>
+              <td>/04/MDS Fighter Wing</td>
+              <td></td>
+              <td>MA</td>
+              <td>Westfield</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="fighterWing2" type="checkbox"> <label class="custom-control-label" for="fighterWing2">&zwnj;</label>
+                </div>
+              </td>
+              <td>/04/MDS Fighter Wing</td>
+              <td></td>
+              <td>MA</td>
+              <td>Westfield</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input class="custom-control-input" id="megellan" type="checkbox"> <label class="custom-control-label" for="megellan">&zwnj;</label>
+                </div>
+              </td>
+              <td>/Magellan Beh</td>
+              <td>99999</td>
+              <td>MO</td>
+              <td>Maryland Height</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input class="custom-control-input" id="claims" type="checkbox"> <label class="custom-control-label" for="claims">&zwnj;</label>
+                </div>
+              </td>
+              <td>1-2-1 Claims</td>
+              <td>99999</td>
+              <td>TX</td>
+              <td>Boerne</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input checked class="custom-control-input" id="ohioComp" type="checkbox"> <label class="custom-control-label" for="ohioComp">&zwnj;</label>
+                </div>
+              </td>
+              <td>1-888-Ohio Comp</td>
+              <td>99999</td>
+              <td>OH</td>
+              <td>Cleveland</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="custom-control custom-checkbox mt-1">
+                  <input class="custom-control-input" id="ohioComp2" type="checkbox"> <label class="custom-control-label" for="ohioComp2">&zwnj;</label>
+                </div>
+              </td>
+              <td>1-888-Ohio Comp</td>
+              <td>99999</td>
+              <td>CO</td>
+              <td>Cleveland</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container-fluid px-lg-5">
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-12 col-lg-auto">
+            Copyright &copy; 2019 LogixHealth. All Rights Reserved.
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-auto mr-auto">
+            <a class="has-tip" data-placement="top" data-toggle="tooltip" title="Version Number 3389">Version</a> | <a data-target="#termsModal" data-toggle="modal" class="text-dark" href="#">Terms of Use</a> | Contact Us          </div>
+          <div class="col-sm-12 col-md-12 col-lg-auto">
+            Powered by <a href="https://www.logixhealth.com/" target="_blank"><svg class="icon icon-md icon-LogixHealth"><use xlink:href="#icon-LogixHealth"></use></svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modals -->
+    <!-- View/Add Notes Modal -->
+    <div aria-hidden="true" aria-labelledby="addNote" class="modal fade" id="addNote" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-top" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white">View/Add Note</h5><button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label" for="noteComment">Note</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="noteComment" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, illo voluptate obcaecati nihil vero fuga neque facilis officia. Quos, sunt?</textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-primary mr-auto" data-dismiss="modal">Cancel</button> <button class="btn btn-primary">Add Note</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- View Attachments Modal -->
+  <div aria-hidden="true" aria-labelledby="viewAttachments" class="modal fade" id="viewAttachments" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-top" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white">View/Add Attachments</h5><button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <p><span class="cg-bold">[Client Name]</span></p>
+            <div class="row">
+              <div class="col-sm col-md-8">
+                <div class="input-group mb-2">
+                  <input aria-label="Search" class="form-control" placeholder="Search" type="text">
+                  <div class="input-group-append">
+                    <button class="btn btn-gray-med mr-1" type="button"><svg class="icon icon-search">
+                    <use xlink:href="#icon-search"></use></svg></button>
+                  </div><button class="btn btn-gray-med"><svg class="icon icon-filter">
+                  <use xlink:href="#icon-filter"></use></svg></button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <!-- Attachments table -->
+                <table class="table dt-responsive" id="attachments" style="width:100%">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>File Name</th>
+                      <th>Modified By</th>
+                      <th>Date Modified</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>24/7EmergencyCare_CompanionGuide.pdf</td>
+                      <td>ktalalas</td>
+                      <td>09/16/18</td>
+                      <td><button class="btn btn-gray-med icn mr-1"><svg class="icon icon-view"><use xlink:href="#icon-view"></use></svg></button><button class="btn btn-gray-med icn mr-1"><svg class="icon icon-delete"><use xlink:href="#icon-delete"></use></svg></button></td>
+                    </tr>
+                    <tr>
+                      <td>Loremipsum.doc</td>
+                      <td>crose</td>
+                      <td>09/15/18</td>
+                      <td><button class="btn btn-gray-med icn mr-1"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg></button> <button class="btn btn-gray-med icn mr-1"><svg class="icon icon-delete"><use xlink:href="#icon-delete"></use></svg></button></td>
+                    </tr>
+                    <tr>
+                      <td>DolorsitametConsectuer_Sept10.doc</td>
+                      <td>crose</td>
+                      <td>09/10/18</td>
+                      <td><button class="btn btn-gray-med icn mr-1"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg></button> <button class="btn btn-gray-med icn mr-1"><svg class="icon icon-delete"><use xlink:href="#icon-delete"></use></svg></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Table More Details Modal -->
+  <div aria-hidden="true" aria-labelledby="detailsTable" class="modal fade" id="detailsTable" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-md modal-dialog-top" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white">Insurance Name</h5><button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+              <div class="tableMoreDetails"></div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Terms and Conditions Modal -->
+  <div aria-hidden="true" aria-labelledby="termsModal" class="modal fade" id="termsModal" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-top" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white">Terms of Use; Acceptance of Terms</h5>
+            <button aria-label="Close" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div id="terms">
+            <p>This website is the property of LogixHealth, Inc. <span class="cg-bold text-uppercase">by using this website, you agree to these terms of use. If you do not agree, do not use this website.</span></p>
+            <p>LogixHealth reserves the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use at any time. It is your responsibility to check these Terms of Use periodically for changes. Your continued use of this website following the posting of changes will mean that you accept and agree to the changes.</p>
+            <p class="cg-bold">Purpose of Website; No Medical or Professional Services or Advice</p>
+            <p>The content on this website is intended to be a general resource regarding LogixHealth's services. LogixHealth does not practice medicine, render medical advice, or dispense medical services via this website or otherwise, and nothing contained in this website is intended to be instruction for medical diagnosis or treatment. Information received from this website should not be relied upon for personal, medical, legal, technical or financial decisions. It should not be used in place of a visit, call, consultation or the advice of a physician, accountant, banker, lawyer, medical coder or other qualified expert.</p>
+            <p class="cg-bold">Information on Website</p>
+            <p>LogixHealth makes no representation as to whether the information in this website is complete, accurate or current, and LogixHealth undertakes no obligation to update or revise the information contained on this website, whether as a result of new information, future events or circumstances, or otherwise. It is your responsibility to verify any information contained in this website.</p>
+            <p class="cg-bold">General Disclaimer</p>
+            <p class="text-uppercase">LogixHealth does not promise that this website or any content, service or feature of the website will be error-free or uninterrupted, or that any defects will be corrected, or that your use of the website will provide specific results. This website and its content are delivered on an "as-is" and "as-available" basis. All information provided on this website is subject to change without notice. LogixHealth cannot ensure that any files or other data you download from this website will be free of viruses or contamination or destructive features. LogixHealth disclaims all warranties, express or implied, including any warranties of accuracy, non-infringement, merchantability and fitness for a particular purpose. LogixHealth disclaims any and all liability for the acts, omissions and conduct of any third parties in connection with or related to your use of this website and/or any LogixHealth services. You assume total responsibility for your use of this website and any linked sites. your sole remedy against LogixHealth for dissatisfaction with this website or any content is to stop using the website or any such content. This limitation of relief is a part of the bargain between the parties for using this website.</p>
+            <p>The above disclaimer applies to any damages, liability or injuries caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, communication line failure, theft or destruction of or unauthorized access to, alteration of, or use, whether for breach of contract, tort, negligence or any other cause of action.</p>
+            <p class="cg-bold">Limitation of Liability</p>
+            <p>Except where prohibited by law, in no event will LogixHealth be liable to you for any indirect, consequential, exemplary, incidental or punitive damages, including lost profits, even if LogixHealth has been advised of the possibility of such damages.</p>
+            <p class="cg-bold">Intellectual Property </p>
+            <p class="cg-bold">Copyright </p>
+            <p>All information, data, text, charts, tables, graphics, drawings, designs, artwork, photographs, computer code, and other content on this website (collectively, "Content"), including but not limited to the design, structure, selection, coordination, expression, "look and feel" and arrangement of such Content, is owned by LogixHealth, and is protected by copyright, trademark, and patent law, and various other intellectual property rights and laws.</p>
+            <p>Except as expressly provided in these Terms of Use, no part of this website and no Content may be copied, reproduced, republished, uploaded, posted, displayed, encoded, translated, transmitted or distributed in any way, without LogixHealth's prior written consent.</p>
+            <p>You may use the information available on this website, including any materials made available for downloading from this website, provided that you use such information only for informational purposes and do not copy or distribute such information in any way.</p>
+            <p class="cg-bold">Trademarks</p>
+            <p>The following are trademarks or registered trademarks of LogixHealth, Inc.: the LogixHealth Logo, LogixHealth, Logix, Logix Callback, Logix Connect, Logix Insight, Logix Intelligence Center, Logix Pace, Logix Payment Variance Analytix, Logix Policy and Performance Variance Analytix, Logix Referral, Charegaster Analytix, Clinical Metrix, ED Pace, Executive Dashboard, Fee Schedule Analytix, Making intelligence Matter, Platform for Assured Coding Excellence, Practice Performance Metrix, Rad Pace, and Revenue Cycle Metrix.</p>
+            <p>You may not use any LogixHealth trademarks without LogixHealth's prior written permission.</p>
+            <p>All other trademarks appearing on this website are the property of their respective owners.</p>
+            <p class="cg-bold">Other</p>
+            <p>Any product, service, or process described in this website may be subject to intellectual property rights or laws. Any such rights are reserved by LogixHealth and are not licensed or otherwise transferred.</p>
+            <p>&nbsp;</p>
+            <p class="cg-bold text-uppercase">Privacy Policy</p>
+            <p class="cg-bold">Scope and Purpose</p>
+            <p>This privacy policy describes the practices of LogixHealth in regard to information that we obtain via this website. It does not describe practices with respect to information that we obtain through other means or the practices of websites of third parties with which we do business. We do not control and are not responsible for the privacy practices of, or the data available on, the websites of third parties, and we urge you to evaluate the soundness of these practices and data for yourself.</p>
+            <p>In a separate section below entitled Statement of E-Mail Privacy Practices, we also provide information about our collection and use of e-mail addresses, both in connection with this website and otherwise, subject to the limitations of scope contained in that section.</p>
+            <p>There are general exceptions to this policy: when you have given us your consent to share or use information about you, when we believe that we need to share information about you to provide a service that you have requested from us or from others, when we are required by law to disclose information, or when we believe that it is necessary to protect our rights or to avoid liability or violations of law.</p>
+            <p>We reserve the right to change this policy at any time without prior notice by publishing changes on this page. Please be sure to check this page periodically for updates to this policy.</p>
+            <p>If you have any questions about this policy, or any other aspects of your privacy with respect to LogixHealth, please contact us at 8 Oak Park Drive, Bedford, Massachusetts 01730.</p>
+            <p class="cg-bold">Privacy of Information Collected on This Website</p>
+            <p>LogixHealth actively seeks to maintain the privacy of our online visitors, and we have constructed and administered this website accordingly. Unless personally identifiable information such as name, address, telephone number, or e-mail address is voluntarily submitted by you on the site, we do not collect such information in connection with use of this site or associate or link it to information that we collect using cookies or web beacons as described below. We use such personally identifiable information that you submit for our internal business purposes only, and we do not sell or trade it. We may share such personally identifiable information with our contract partners who provide marketing and website-related services to us, but will do this under contracts that prohibit our partners' disclosure and use of that information except as necessary to provide those services to us.</p>
+            <p>We use "cookie" technology with respect to this site (for an explanation of this term, see the section About Cookies below). We reserve the right to use this technology to obtain information from online visitors that we believe is necessary to permit convenient functionality of this site, to enhance the user's online experience on this site, and to assess the effectiveness and design of site features. For example, we may track the number of visitors using portions or features of this site in order to make changes that we believe will improve the site, and we may track the popularity and use of features on this site to guide development of new ones. The information that we use may include, for example, IP address and other data about the equipment used to visit this site, the pattern of searching and browsing that preceded viewing our site, and the behavior of viewers on this site, and we do not consider this type of information personally identifiable.</p>
+            <p class="cg-bold">Statement of E-Mail Privacy Practices</p>
+            <p>This statement about e-mail does not apply to collection and use of e-mail addresses:</p>
+            <ul>
+              <li>In communications to and from our clients or their personnel, since e-mail addresses and data exchanged in those relationships are governed by the confidentiality and other provisions of our client contracts;</li>
+              <li>In our Outlook<sup>&reg;</sup> or equivalent address book, contact, or business e-mail systems designed or used to enable day-to-day communications between individuals known to each other or engaging in business/personal communications; or</li>
+              <li>For disclosure to ISPs and other data carriers in the course of transmission of e-mails otherwise permitted by this Statement.</li>
+            </ul>
+            <p>You will not receive e-mail as a result of visiting this site unless you request or consent to it or have voluntarily filled out a form on this site that contains your e-mail address. All such e-mail will include capability to opt-out of receiving further e-mails from us, if you wish to do so, and that capability will be consistent with applicable laws and regulations.</p>
+            <p>With respect to e-mail not resulting from visiting this site, we divide the e-mail that we send or initiate into two categories for privacy purposes: "Patient E-mail" and "Other E-mail."</p>
+            <p class="cg-bold">Patient E-Mail: E-mail that we send or arrange with our service providers to send on behalf of our medical practice clients to the patients of those clients in order to perform, complete, or confirm services that those patients have requested from clients, and e-mail that is generated through patients' use of our clients' patient web portals is classified by us as transactional and/or relationship content e-mail that is integral to our client services. We do not provide a means of opt-out from such e-mail. In those cases in which we believe patient e-mail is not primarily for transactional/relationship purposes, the e-mail will include capability to opt-out of receiving further e-mails from us, if the patient wishes to do so, and that capability will be consistent with applicable laws and regulations.</p>
+            <p>We consider the e-mail addresses of our clients' patients that are provided to us by our clients, by those patients themselves via a client's patient web portal, or by others in the course of our providing client services to be private information that is protected under the privacy and security provisions of the Health Insurance Portability and Accountability Act of 1996, as amended (HIPAA) and other applicable federal and state privacy and security laws. These laws include strict limitations on the use to which this information may be put. We disclose and use such addresses only for legitimate business purposes as permitted by HIPAA and such laws and regulations. We do not use such addresses to market or promote ourselves. We require all contractors (other than ISPs and other carriers) who we retain to aid us in sending, receiving, or tracking patient e-mails using such addresses to agree to confidentiality provisions in business associate agreements as required under HIPAA.</p>
+            <p class="cg-bold">Other E-Mail: We may also send or initiate e-mail to other individuals that is not transactional/relationship content e-mail (including, for example, e-mail to sales prospects, investors, job-seekers, and members of the public who have requested communications or information from us). All such e-mail will include capability to opt-out of receiving further e-mails from us, if the recipient wishes to do so, and that capability will be consistent with applicable laws and regulations.</p>
+            <p>We may collect addresses for such messages from a number of sources, such as this website (subject to the Privacy Policy above) and from various vendors, business data bases, sign up promotions, meetings, and similar sources. Any addresses collected are for our own marketing, promotional, and informational communications including solicitations, invitations, newsletters, awareness campaigns, announcements, and similar activities. In some cases, we disclose these addresses to our contract partners who support or enable our activities (for example, by sending and tracking e-mails). However, we do not permit use or further disclosure of such addresses for the use of sending e-mail other than our own e-mail or e-mail on behalf of our clients.</p>
+            <p>Our outgoing e-mail may include the capability to track when a URL (or web link) has been clicked inside of an e-mail message sent by our system or by a vendor on our behalf. This does not collect personally identifiable information such as name, address, telephone number, or e-mail address; but, it may collect information on IP address, browsing history or path and other data about the equipment of the user.</p>
+            <p class="cg-bold">About Cookies</p>
+            <p>"Cookies" are files stored on a user's computer by a server or website in connection with a session, visit, viewing of a web page, or user action on a web page. They can be read or retrieved by the same or another server or website when additional sessions, visits, viewings, or user actions occur and can be used to provide information about the session, visit, viewing, or action when they were stored. Most browsers contain various controls for accepting, rejecting, or notifying users about cookies. Users who wish to administer acceptance and storage of cookies should refer to browser instructions and compare the administrative capabilities of different browsers to determine what is appropriate for them. Administrative settings that refuse to accept or store cookies may adversely affect access to features of this site or your ability to view or navigate within this site. The cookies we use do not collect personally identifiable information such as name, address, telephone number, or e-mail address.</p></div>
+          </div>
+          <div class="modal-footer">
+            <div class="w-100">
+              <button class="btn btn-primary float-right" data-dismiss="modal" type="button">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://scripts.logixhealth.com/js/lib/jquery-3.3.1.min.js">
+    </script> 
+    <script src="../../js/popper.min.js">
+    </script> 
+    <script src="../../js/bootstrap.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.js">
+    </script> 
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js">
+    </script> 
+    <script src="../../assets/js/select.js">
+    </script> 
+    <script src="../../assets/js/dragdrop.js">
+    </script> 
+    <script src="../../Datatables/DataTables-1.10.18/js/jquery.dataTables.js">
+    </script> 
+    <script src="../../Datatables/DataTables-1.10.18/js/dataTables.bootstrap4.js">
+    </script> 
+    <script src="../../Datatables/Responsive-2.2.2/js/dataTables.responsive.js">
+    </script> 
+    <script src="../../Datatables/RowReorder-1.2.4/js/dataTables.rowReorder.js">
+    </script> 
+    <script src="../../Datatables/Select-1.2.6/js/dataTables.select.js">
+    </script>
+    <script src="../../js/menu.js">
+    </script> 
+    <script src="../../js/main.js">
+    </script> 
+    <script>
+
+
+$(function()
+{
+  var table = $('#linkedInsurancesTable').DataTable(
+  {
+    "aaSorting": [
+      [2, "asc"]
+    ],
+    "paging": false,
+    "ordering": true,
+    "info": false,
+    "searching": true,
+    "scrollY": '50vh',
+    "responsive":
+    {
+      details: false
+    },
+    "columnDefs": [
+    {
+      targets: 0,
+      className: 'control',
+    },
+    {
+      responsivePriority: 1,
+      targets: 2
+    },
+    {
+      targets: [1],
+      className: "text-center",
+      orderable: false,
+      searching: false
+    },
+    {
+    // More Details Button
+      "targets": 0,
+      "orderable": false,
+      "data": null,
+      "defaultContent": "<button id='moreDetails' class='btn btn-sm btn-link lh-0 mr-1'><svg class='icon icon-expand'><use xlink:href='#icon-expand'></use></svg></button>"
+    }]
+  });
+  $('#linkedInsurancesTable tbody').on('click', 'button#moreDetails', function()
+  {
+    var data = table.row($(this).parents('tr')).data();
+    $('.tableMoreDetails').html('<table class="table dtr-details" width="100%"><tbody><tr><td>Insurance Name<td><td>' + data[2] + '</td></tr><tr><td>Payer Number<td><td>' + data[3] + '</td></tr><tr><td>State<td><td>' + data[4] + '</td></tr><tr><td>City<td><td>' + data[5] + '</td></tr></tbody></table>');
+    $('#detailsTable').modal('show');
+  });
+  var oTable = $('#linkedInsurancesTable').DataTable();
+  $('#searchLinkedInsurancesTable').keyup(function()
+  {
+    oTable.search($(this).val()).draw();
+  })
+  $('.toggle-vis').on('change', function(e)
+  {
+    e.preventDefault();
+    // Get Column API Object
+    var column = table.column($(this).attr('data-column'));
+    // Toggle Visibility
+    column.visible(!column.visible());
+  });
+});
+
+
+
+    
+    $(function()
+{
+  $('#attachments').DataTable(
+  {
+    "columnDefs": [
+    {
+      targets: [3],
+      className: "text-center",
+      orderable: false,
+    },
+    {
+      targets: 2,
+      className: "text-right",
+    },],
+    "paging": false,
+    "ordering": true,
+    "info": false,
+    "searching": false,
+  });
+});
+    </script> 
+
+    <script>
+    $('.toollist').select2(
+    { //apply select2 to my element
+      placeholder: "Select...",
+      containerCssClass: 'form-control-sm'
+    });
+
+
+      $(document).on("click", ".button-remove", function() {
+        $(this).closest(".tooltest0").remove();
+    });
+
+
+
+    $('.button-add').click(function()
+    {
+      $('.toollist').select2("destroy");
+      var noOfDivs = $('.tooltest0').length;
+      var clonedDiv = $('.tooltest0').first().clone(true);
+      clonedDiv.insertBefore("#tool-placeholder");
+      clonedDiv.attr('id', 'tooltest' + noOfDivs);
+      $('.toollist').select2(
+      { //apply select2 to my element
+        placeholder: "Select...",
+        containerCssClass: 'form-control-sm',
+      });
+      $('.tooltest0').each(function(e,i){
+            $(this).find('.count_agent').text($(this).index()+1);
+        });
+    });
+
+
+    </script>
+
+</body>
+</html>
