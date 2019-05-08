@@ -1,9 +1,0 @@
-To Run on Chrome
-1)	Close all Chrome browsers
-2)	Run this command in the command prompt
-“[Path To Chrome EXE]” --user-data-dir="[ath to store session data]" --disable-web-security
-
-Example:
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/Chrome Session" --disable-web-security
-
-3)	Now the browser will run the content.
